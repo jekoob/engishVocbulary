@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyVac</title>
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	
+	<div id="main_container">
+	
+		<div id=tabs_outerWrapper>
+			<div class=arrow id="arrowLeft">
+				<i class="fas fa-arrow-circle-left" onclick="clickLeft()"></i>
+			 </div>
+			 <div id=tabs_wrapper>	
+				<div id="tab1" class="tab" tabindex="1" onclick="getIn_tab(this)">
+						<!--<input type="text" name="title" placeholder="title">-->
+						<p>title</p>
+				</div>
+				<div id=attBtn_wrapper>
+					<i class=" fa fa-plus-circle "aria-hidden="true" onclick="add_tab()"></i> 
+				</div >
+			</div>
+			<div class=arrow id="arrowRight">
+				<i class=" fas fa-arrow-circle-right" onclick="clickRight()"></i>
+			 </div>
+		</div>
+		<table>
+				<tr>
+					<th>
+						word
+					</th>
+					<th>
+						part-speech
+					</th>
+					<th>
+						transcription
+					</th>
+					<th>
+						synonym
+					</th>
+					<th>
+						recort
+					</th>
+					<th>
+						translation
+					</th>
+				</tr>
+		</table>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
